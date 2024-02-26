@@ -1,7 +1,7 @@
 /* App.css */
 
 .main {
-    padding-top: 560px;
+    top: 560px;
     display: flex;
     justify-content: center;
 }

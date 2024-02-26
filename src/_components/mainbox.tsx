@@ -123,10 +123,10 @@ const MainBox = () => {
                 <Screen />
             </div>
             <div className="Schebox">
-                <ChevronDown className="section-icon" />
                 <div className="title">
                     <div className="section-title">일과</div>
                 </div>
+                <ChevronDown className="section-icon2" />
                 <div className="divider"></div>
             </div>
         </div>
