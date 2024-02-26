@@ -23,8 +23,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="log">
-                    <button className="e">log In</button>
-                    <button className="e">sign In</button>
+                    <button className="e">로그인</button>
                 </div>
             </div>
             {/* <div className="navsub">
