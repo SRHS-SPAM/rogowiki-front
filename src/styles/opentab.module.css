@@ -10,7 +10,7 @@ body {
 }
 
 .topbox {
-  border-bottom: 1.5px #cccccc solid;
+  border-bottom: 3px #cccccc solid;
   display: flex;
   padding: 0.5rem;
   padding-left: 1rem;
