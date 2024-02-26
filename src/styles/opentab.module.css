@@ -1,0 +1,34 @@
+body {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.mainbox {
+  width: 100%;
+  height: 100%;
+  margin: 5rem;
+}
+
+.topbox {
+  width: 100%;
+  border-bottom: 3px #cccccc solid;
+  display: flex;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.topbox {
+  /* 스타일 정의 */
+  cursor: pointer;
+}
+
+.open_arrow {
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}
+
+.open {
+}
