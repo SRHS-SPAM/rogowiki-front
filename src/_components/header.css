@@ -26,7 +26,7 @@
 .p {
     border: none;
     background: rgba(255, 224, 94, 1);
-    width: 60px;
+    width: 80px;
     height: 24px;
     color: #4d4d4d;
     font-family: Pretendard;
@@ -72,9 +72,6 @@
     display: flex;
     flex-direction: row;
 }
-.subbox {
-    display: none;
-}
 .navsub {
     height: 280px;
     width: 100%;
@@ -82,10 +79,6 @@
     display: flex;
     flex-direction: row;
     position: relative;
-}
-
-.header:hover .subbox {
-    display: block;
 }
 .d {
     margin-top: 35px;
@@ -99,4 +92,29 @@
     font-weight: 500;
     line-height: normal;
     margin-top: 30px;
+}
+.log {
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 200px;
+    height: 80px;
+}
+.e {
+    background: none;
+    color: #4d4d4d;
+    font-family: Pretendard;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    input:focus {
+        outline: none;
+    }
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
 }
