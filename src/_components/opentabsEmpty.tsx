@@ -2,6 +2,7 @@
 import styles from "../styles/opentabsEmpty.module.css";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 
 interface OpentabEmptyProps {
@@ -32,9 +33,20 @@ function OpentabEmpty({ title, children }: OpentabEmptyProps) {
                 </div>
                 <div className={styles.open_title}>{title}</div>
             </div>
-            <div className={`${styles.botbox} ${isOpen ? styles.open : ""}`}>
-                {isOpen && children}
-            </div>
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        className={`${styles.botbox} ${
+                            isOpen ? styles.open : ""
+                        }`}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                    >
+                        {children}
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 }

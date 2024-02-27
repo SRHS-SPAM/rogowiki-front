@@ -1,6 +1,7 @@
 import styles from "../styles/opentab.module.css";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 
 interface OpentabProps {
@@ -39,33 +40,44 @@ function Opentab({ title, value, size, color }: OpentabProps) {
                     {title}
                 </div>
             </div>
-            <div className={`${styles.botbox} ${isOpen ? styles.open : ""}`}>
-                {isOpen &&
-                    value.map((lineArray, outerIndex) => (
-                        <React.Fragment key={outerIndex}>
-                            {lineArray.map((line, innerIndex) => (
-                                <React.Fragment key={innerIndex}>
-                                    <span
-                                        style={{
-                                            fontSize:
-                                                size[outerIndex][innerIndex] !==
-                                                undefined
-                                                    ? size[outerIndex][
-                                                          innerIndex
-                                                      ]
-                                                    : 24,
-                                            color: getColor(outerIndex),
-                                        }}
-                                    >
-                                        {line}
-                                    </span>
-                                    <br />
-                                </React.Fragment>
-                            ))}
-                            <br />
-                        </React.Fragment>
-                    ))}
-            </div>
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        className={`${styles.botbox} ${
+                            isOpen ? styles.open : ""
+                        }`}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                    >
+                        {value.map((lineArray, outerIndex) => (
+                            <React.Fragment key={outerIndex}>
+                                {lineArray.map((line, innerIndex) => (
+                                    <React.Fragment key={innerIndex}>
+                                        <span
+                                            style={{
+                                                fontSize:
+                                                    size[outerIndex][
+                                                        innerIndex
+                                                    ] !== undefined
+                                                        ? size[outerIndex][
+                                                              innerIndex
+                                                          ]
+                                                        : 24,
+                                                color: getColor(outerIndex),
+                                            }}
+                                        >
+                                            {line}
+                                        </span>
+                                        <br />
+                                    </React.Fragment>
+                                ))}
+                                <br />
+                            </React.Fragment>
+                        ))}
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 body {
     box-sizing: border-box;
-    font-family: Pretendard;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 .mainbox {
@@ -35,6 +35,7 @@ body {
 .edit {
     border: 1.5px #cccccc solid;
     padding: 0.5rem 1.5rem;
+    cursor: pointer;
 }
 
 .category {

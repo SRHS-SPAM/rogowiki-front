@@ -9,9 +9,9 @@ function Home() {
     return (
         <>
             <Header />
-            <div className="main">
+            {/* <div className="main">
                 <MainBox />
-            </div>
+            </div> */}
             <Footer />
         </>
     );

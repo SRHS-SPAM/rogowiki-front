@@ -1,6 +1,9 @@
+.body {
+    font-family: "Noto Sans KR", sans-serif;
+}
 .mainbox {
     width: 1238px;
-    height: 4228px;
+    height: 4528px;
     flex-shrink: 0;
     background: #fff;
     margin-top: 524px;
@@ -10,7 +13,6 @@
 .title {
     color: black;
     font-size: 40px;
-    font-family: "Pretendard";
     font-weight: 500;
     word-wrap: break-word;
     margin-top: 41px;
@@ -41,7 +43,6 @@
     position: absolute;
     color: black;
     font-size: 15px;
-    font-family: "Pretendard";
     font-weight: 400;
     word-wrap: break-word;
 }
@@ -52,7 +53,6 @@
     position: absolute;
     color: #ffb800;
     font-size: 15px;
-    font-family: "Pretendard";
     font-weight: 400;
     word-wrap: break-word;
 }
@@ -215,7 +215,6 @@
     width: 1016px;
     text-align: left;
     font-size: 24px;
-    font-family: "Pretendard";
     font-weight: bold;
     color: #000;
 }
@@ -227,7 +226,6 @@
     width: 1016px;
     height: 143px;
     font-size: 24px;
-    font-family: "Pretendard";
     color: #666;
 }
 
@@ -253,7 +251,6 @@
     left: 41px;
     top: 0;
     font-size: 40px;
-    font-family: "Pretendard";
     font-weight: medium;
     color: #000;
     white-space: nowrap;

@@ -1,5 +1,7 @@
 /* App.css */
-
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
 .main {
     top: 560px;
     display: flex;
