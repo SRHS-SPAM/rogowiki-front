@@ -15,7 +15,7 @@ const Header = () => {
                         <div className="any">
                             <img src="logo.png" alt="logo" className="logo" />
                             <div className="list">
-                                <button className="p">학교</button>
+                                <button className="p">글목록</button>
                                 <button className="p">공지</button>
                                 <button className="p">글쓰기</button>
                                 <button className="p">정보</button>
