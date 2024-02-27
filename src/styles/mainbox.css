@@ -2,10 +2,9 @@
     width: 1238px;
     height: 4228px;
     flex-shrink: 0;
-    border: 3px solid #ccc;
     background: #fff;
     margin-top: 524px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .title {
@@ -59,22 +58,20 @@
 }
 
 .line {
-    width: 1110px;
+    width: 1073px;
     height: 1px;
     background: #a8a8a8;
-    margin-left: 64px;
-    margin-top: 178px;
+    margin-top: 81px;
 }
 .line2 {
-    width: 1110px;
+    width: 1073px;
     height: 1px;
     background: #a8a8a8;
-    margin-left: 64px;
     margin-top: 60px;
 }
 .tree {
     margin-left: 205px;
-    margin-top: 43px;
+    margin-top: 20px;
     width: 831px;
     height: 120px;
     text-align: center;
@@ -120,7 +117,7 @@
     background: white;
     border: 3px #ccc solid;
     margin-top: 99px;
-    margin-left: 187px;
+    margin-left: 123px;
 }
 .pyo1 {
     width: 865px;
@@ -393,4 +390,89 @@
     width: 50px;
     height: 150px;
     color: rgba(117, 117, 117, 1);
+}
+.timebox {
+    width: 573px;
+    flex-shrink: 0;
+    border: 3px solid #ccc;
+    background: #fff;
+    margin: 0 auto;
+}
+.time {
+    display: flex;
+    flex-direction: row;
+}
+.timetop {
+    width: 573px;
+    height: 87px;
+    flex-shrink: 0;
+    border-bottom: 3px solid #ccc;
+    background: #ffe05e;
+    color: #4c4c4c;
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: center;
+    line-height: 87px;
+}
+.time1 {
+    text-align: center;
+    line-height: 63px;
+    width: 148px;
+    height: 63px;
+    border-bottom: 3px solid #ccc;
+    background: #ffe05e;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
+.time12 {
+    text-align: center;
+    line-height: 63px;
+    width: 148px;
+    height: 63px;
+    background: #ffe05e;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
+.time2 {
+    width: 426px;
+    height: 63px;
+    border-bottom: 3px solid #ccc;
+    background: #fff;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
+.time22 {
+    width: 426px;
+    height: 63px;
+    background: #fff;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
 }

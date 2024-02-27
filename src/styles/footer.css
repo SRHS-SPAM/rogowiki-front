@@ -20,6 +20,7 @@
 }
 .git {
     height: 30px;
+    cursor: pointer;
 }
 .text {
     margin-top: 3px;

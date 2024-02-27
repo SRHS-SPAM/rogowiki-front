@@ -1,6 +1,6 @@
 "use client";
 
-import "./header.css";
+import "../styles/header.css";
 import { Search } from "lucide-react";
 
 const Header = () => {
