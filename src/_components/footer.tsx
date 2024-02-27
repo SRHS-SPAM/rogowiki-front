@@ -7,7 +7,6 @@ const Footer = () => {
     const [componentRef, size] = useComponentSize();
     const renderContent = () => {
         if (size.width > 800) {
-            // 가로너비가 600보다 큰 경우
             return (
                 <div className="footer">
                     <div className="main2">
@@ -32,9 +31,9 @@ const Footer = () => {
                             <div className="text">|</div>
                             <img src="insta.png" alt="insta" className="git" />
                         </div>
-                        <div className="email">
+                        <div className="email2">
                             rogo.wiki | msg2324@srh-spam.com | SPAM | PROJECT
-                            ROGOWIKI{" "}
+                            ROGOWIKI
                         </div>
                     </div>
                 </div>

@@ -39,9 +39,9 @@ const Header = () => {
         } else {
             return (
                 <div className="header2">
-                    <div className="main2">
-                        <div className="any2">
-                            <img src="logo.png" alt="logo" className="logo2" />
+                    <div className="main23">
+                        <img src="logo.png" alt="logo2" className="logo2" />
+                        <div className="any23">
                             <div className="list">
                                 <button className="p2">학교</button>
                                 <button className="p2">공지</button>

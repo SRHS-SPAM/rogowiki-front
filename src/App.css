@@ -3,7 +3,6 @@ body {
     font-family: "Noto Sans KR", sans-serif;
 }
 .main {
-    top: 560px;
     display: flex;
     justify-content: center;
 }
