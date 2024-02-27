@@ -7,9 +7,8 @@ interface ListsProps {
 
 const Lists = ({ lists }: ListsProps) => {
     const [componentRef, size] = useComponentSize();
-
     const renderContent = () => {
-        if (size.width > 800) {
+        if (size.width > 480) {
             return (
                 <div className={styles.listMain}>
                     <div className={styles.listTitle}>글 목록</div>
@@ -18,24 +17,26 @@ const Lists = ({ lists }: ListsProps) => {
                             {item}
                         </div>
                     ))}
+                    <div className={styles.white}> </div>
                 </div>
             );
         } else {
             return (
                 <div className={styles.listMain2}>
                     <div className={styles.listTitle2}>글 목록</div>
-                    {lists.map((item, index) => (
-                        <div key={index} className={styles.listList2}>
-                            {item}
+                    {lists.map((item2, index2) => (
+                        <div key={index2} className={styles.listList2}>
+                            {item2}
                         </div>
                     ))}
+                    <div className={styles.white}> </div>
                 </div>
             );
         }
     };
 
     return (
-        <div className={styles.listMain} ref={componentRef}>
+        <div className={styles.listmain} ref={componentRef}>
             {renderContent()}
         </div>
     );
