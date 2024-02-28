@@ -39,6 +39,7 @@ body {
 }
 
 .category {
+    min-width: 141px;
     border: 1.5px #cccccc solid;
     padding: 0.5rem 2rem;
     font-weight: 400;

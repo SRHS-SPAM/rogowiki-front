@@ -1,13 +1,12 @@
-.body {
+body {
     font-family: "Noto Sans KR", sans-serif;
 }
 .mainbox {
-    width: 1238px;
+    width: 70%;
     height: 4528px;
     flex-shrink: 0;
     background: #fff;
     margin-top: 524px;
-    margin-bottom: 200px;
 }
 
 .title {
@@ -58,10 +57,14 @@
 }
 
 .line {
-    width: 1073px;
-    height: 1px;
-    background: #a8a8a8;
-    margin-top: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7rem;
+    padding-bottom: 4%;
+    margin-bottom: 3rem;
+    margin-top: 50px;
+    border-bottom: 1px #a8a8a8 solid;
 }
 .line2 {
     width: 1073px;
@@ -70,11 +73,10 @@
     margin-top: 60px;
 }
 .tree {
-    margin-left: 205px;
     margin-top: 20px;
-    width: 831px;
-    height: 120px;
+    width: 100%;
     text-align: center;
+    border: 1px #cccccc solid;
 }
 .tree1 {
     color: #666666;
@@ -112,36 +114,31 @@
     word-wrap: break-word;
 }
 .pyomain {
-    width: 865px;
-    height: 1398px;
+    width: 100%;
     background: white;
-    border: 3px #ccc solid;
     margin-top: 99px;
-    margin-left: 123px;
+    border: 3px #ccc solid;
+    border-bottom: none;
+    min-width: 200px;
 }
 .pyo1 {
-    width: 865px;
+    width: 100%;
     height: 116px;
     position: relative;
 }
-.pyo2 {
-    width: 865px;
-    height: 116px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    background: #ffe05e;
-    border-bottom: 3px #cccccc solid;
-}
 
 .pyo3 {
-    left: 313px;
-    top: 33px;
+    border-bottom: 3px #ccc solid;
+    min-width: 269px;
+    width: 100%;
+    height: 100%;
+    background: #ffe05e;
     position: absolute;
     flex-direction: column;
-    justify-content: flex-start;
+    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    display: inline-flex;
 }
 
 .pyo4 {
@@ -162,21 +159,22 @@
     word-wrap: break-word;
 }
 .img {
-    width: 865px;
-    height: 232px;
     background: white;
     border-bottom: 3px #cccccc solid;
 }
+.srh {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 25px;
+}
 .saero {
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
-.srh {
-    margin-left: 130px;
-    margin-top: 25px;
-}
 .yb {
-    width: 170px;
+    width: 100%;
+    min-width: 83px;
     height: 72px;
     background: #ffe05e;
     border-bottom: 3px #cccccc solid;
@@ -188,13 +186,11 @@
     align-items: center;
 }
 .wb {
-    width: 695px;
     height: 72px;
     background: #ffffff;
     border-bottom: 3px #cccccc solid;
     color: black;
     font-size: 30px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -389,7 +385,7 @@
     color: rgba(117, 117, 117, 1);
 }
 .timebox {
-    width: 573px;
+    width: 60%;
     flex-shrink: 0;
     border: 3px solid #ccc;
     background: #fff;
@@ -400,7 +396,6 @@
     flex-direction: row;
 }
 .timetop {
-    width: 573px;
     height: 87px;
     flex-shrink: 0;
     border-bottom: 3px solid #ccc;
@@ -461,7 +456,6 @@
     letter-spacing: 1.2px;
 }
 .time22 {
-    width: 426px;
     height: 63px;
     background: #fff;
     color: #000;

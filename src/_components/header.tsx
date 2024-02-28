@@ -7,7 +7,7 @@ import { Search } from "lucide-react";
 const Header = () => {
     const [componentRef, size] = useComponentSize();
     const renderContent = () => {
-        if (size.width > 800) {
+        if (size.width > 1000) {
             // 가로너비가 600보다 큰 경우
             return (
                 <div className="header">

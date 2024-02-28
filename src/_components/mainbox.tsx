@@ -2,6 +2,7 @@
 
 import { ChevronDown } from "lucide-react";
 import "../styles/mainbox.css";
+import useComponentSize from "../tool/size";
 import DocumentMain from "./documentMain";
 import Opentab from "./opentabs";
 import OpentabEmpty from "./opentabsEmpty";
@@ -120,6 +121,7 @@ const MainBox = () => {
         </div>
     );
 };
+
 export default MainBox;
 export const Time = () => {
     return (
@@ -180,7 +182,6 @@ export const Pyo = () => {
     return (
         <div className="pyomain">
             <div className="pyo1">
-                <div className="pyo2"></div>
                 <div className="pyo3">
                     <div className="pyo4">서울로봇고등학교</div>
                     <div className="pyo5">SEOUL ROBOTICS HIGH SCHOOL</div>
