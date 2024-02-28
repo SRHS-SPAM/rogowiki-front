@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   box-sizing: border-box;
   font-family: Pretendard;
 }
@@ -62,4 +63,70 @@ body {
   font-size: 1rem;
   line-height: normal;
   letter-spacing: 0.0625rem;
+=======
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    border: 2.5px #cccccc solid;
+    height: 100%;
+}
+
+.subbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7rem;
+    padding-bottom: 4%;
+    margin-bottom: 3rem;
+    border-bottom: 1px #a8a8a8 solid;
+}
+
+.titlebox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.edit {
+    border: 1.5px #cccccc solid;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.category {
+    border: 1.5px #cccccc solid;
+    padding: 0.5rem 2rem;
+    font-weight: 400;
+}
+
+.categoryItem {
+    color: #ffb800;
+}
+
+.infobox {
+    border-top: 1px #a8a8a8 solid;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+.maininfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
+>>>>>>> test
 }
