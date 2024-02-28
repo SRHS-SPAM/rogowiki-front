@@ -1,23 +1,19 @@
-<<<<<<< HEAD
-import React from "react";
-import logo from "  ./logo.svg";
-=======
 "use client";
 
->>>>>>> test
 import Home from "./routes/Home";
+import DocumentWrite from "./_components/documentWrite";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-<<<<<<< HEAD
-    <div className="App">
-      <Home />
-    </div>
-=======
     <>
-      <Home />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/test" element={<DocumentWrite />} />
+        </Routes>
+      </Router>
     </>
->>>>>>> test
   );
 }
 
