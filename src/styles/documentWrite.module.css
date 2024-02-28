@@ -1,0 +1,14 @@
+body {
+  box-sizing: border-box;
+  font-family: Pretendard;
+}
+
+.mainbox {
+  display: flex;
+  flex-direction: column;
+  border: 2.5px #cccccc solid;
+}
+
+.titlebox {
+  display: flex;
+}
