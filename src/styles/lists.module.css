@@ -1,0 +1,57 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+.listmain {
+    flex-direction: column;
+    width: 60%;
+    margin: 100px;
+}
+.listMain {
+    min-width: 150px;
+    font-size: 36px;
+}
+.listTitle {
+    background: #ffe05e;
+    height: 100%;
+    border: 2px #cccccc solid;
+
+    font-weight: bold;
+    text-align: center;
+    line-height: 90px;
+}
+.listList {
+    text-align: center;
+    line-height: 90px;
+
+    height: 100%;
+    border-bottom: 2px #cccccc solid;
+    border-left: 2px #cccccc solid;
+    border-right: 2px #cccccc solid;
+    cursor: pointer;
+}
+.listMain2 {
+    height: 50px;
+    font-size: 20px;
+    flex-direction: column;
+}
+.listTitle2 {
+    background: #ffe05e;
+    height: 100%;
+    border: 2px #cccccc solid;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}
+.listList2 {
+    text-align: center;
+    line-height: 50px;
+    font-size: 10px;
+    border-bottom: 2px #cccccc solid;
+    border-left: 2px #cccccc solid;
+    border-right: 2px #cccccc solid;
+    cursor: pointer;
+}
+.white {
+    height: 100px;
+}

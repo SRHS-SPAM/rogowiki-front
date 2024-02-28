@@ -1,0 +1,475 @@
+.body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+.mainbox {
+    width: 1238px;
+    height: 4528px;
+    flex-shrink: 0;
+    background: #fff;
+    margin-top: 524px;
+    margin-bottom: 200px;
+}
+
+.title {
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin-top: 41px;
+    margin-left: 64px;
+}
+
+.customContainer {
+    position: relative;
+    margin-top: 80px;
+    margin-left: 64px;
+    background: #ddd;
+}
+
+.customBox1 {
+    width: 1110px;
+    height: 47px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    border: 1px #cccccc solid;
+}
+
+.customText1 {
+    left: 23px;
+    top: 15px;
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.customText2 {
+    left: 69px;
+    top: 15px;
+    position: absolute;
+    color: #ffb800;
+    font-size: 15px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.line {
+    width: 1073px;
+    height: 1px;
+    background: #a8a8a8;
+    margin-top: 81px;
+}
+.line2 {
+    width: 1073px;
+    height: 1px;
+    background: #a8a8a8;
+    margin-top: 60px;
+}
+.tree {
+    margin-left: 205px;
+    margin-top: 20px;
+    width: 831px;
+    height: 120px;
+    text-align: center;
+}
+.tree1 {
+    color: #666666;
+    font-size: 28px;
+    font-family: Pretendard;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.tree2 {
+    color: #ffe500;
+    font-size: 28px;
+    font-family: Pretendard;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.tree3 {
+    color: #ffe500;
+    font-size: 18px;
+    font-family: Pretendard;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.tree4 {
+    color: #666666;
+    font-size: 18px;
+    font-family: Pretendard;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.tree5 {
+    color: #666666;
+    font-size: 15px;
+    font-family: Pretendard;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.pyomain {
+    width: 865px;
+    height: 1398px;
+    background: white;
+    border: 3px #ccc solid;
+    margin-top: 99px;
+    margin-left: 123px;
+}
+.pyo1 {
+    width: 865px;
+    height: 116px;
+    position: relative;
+}
+.pyo2 {
+    width: 865px;
+    height: 116px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #ffe05e;
+    border-bottom: 3px #cccccc solid;
+}
+
+.pyo3 {
+    left: 313px;
+    top: 33px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+}
+
+.pyo4 {
+    color: #4c4c4c;
+    font-size: 32px;
+    font-family: Pretendard;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    word-wrap: break-word;
+}
+
+.pyo5 {
+    color: #ca9200;
+    font-size: 13px;
+    font-family: Pretendard;
+    font-weight: 500;
+    letter-spacing: 0.65px;
+    word-wrap: break-word;
+}
+.img {
+    width: 865px;
+    height: 232px;
+    background: white;
+    border-bottom: 3px #cccccc solid;
+}
+.saero {
+    display: flex;
+    flex-direction: row;
+}
+.srh {
+    margin-left: 130px;
+    margin-top: 25px;
+}
+.yb {
+    width: 170px;
+    height: 72px;
+    background: #ffe05e;
+    border-bottom: 3px #cccccc solid;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wb {
+    width: 695px;
+    height: 72px;
+    background: #ffffff;
+    border-bottom: 3px #cccccc solid;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    margin-left: 60px;
+    margin-top: 136px;
+    position: relative;
+    width: 1120px;
+    height: 372px;
+}
+
+.info-box {
+    position: absolute;
+    left: 51px;
+    top: 285px;
+    width: 1016px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.welcome-box {
+    position: absolute;
+    left: 48px;
+    top: 107px;
+    width: 1016px;
+    height: 143px;
+    font-size: 24px;
+    color: #666;
+}
+
+.divider {
+    position: absolute;
+    left: 0;
+    top: 72px;
+    width: 1120px;
+    height: 0;
+    border: 3px solid #ccc;
+}
+
+.section-header {
+    position: absolute;
+    left: 7px;
+    top: 0;
+    width: 111px;
+    height: 48px;
+}
+
+.section-title {
+    position: absolute;
+    left: 41px;
+    top: 0;
+    font-size: 40px;
+    font-weight: medium;
+    color: #000;
+    white-space: nowrap;
+}
+
+.section-icon {
+    position: absolute;
+    right: 80px;
+    top: -45px;
+    bottom: 36.46%;
+    width: 50px;
+    height: 150px;
+    color: rgba(117, 117, 117, 1);
+}
+.screen {
+    top: 47px;
+    height: 781px;
+    position: relative;
+    width: 1120px;
+    border: 3px solid #ccc;
+}
+.screen .divider {
+    left: 60px;
+    margin-top: 50px;
+}
+.screen .line {
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 69px;
+    width: 1120px;
+}
+
+.screen .title {
+    height: 48px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    width: 111px;
+}
+
+.screen .text-wrapper {
+    color: #000000;
+    font-family: "Pretendard-Medium", Helvetica;
+    font-size: 40px;
+    font-weight: 500;
+    left: 41px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+}
+
+.screen .vector {
+    height: 16px;
+    left: -2px;
+    position: absolute;
+    top: 16px;
+    width: 29px;
+}
+
+.screen .view {
+    height: 95px;
+    left: 48px;
+    position: absolute;
+    top: 96px;
+    width: 1016px;
+}
+
+.screen .div {
+    color: #666666;
+    font-family: "Pretendard-Medium", Helvetica;
+    font-size: 32px;
+    font-weight: 500;
+    left: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 50px;
+    white-space: nowrap;
+}
+
+.screen .p {
+    color: #666666;
+    font-family: "Pretendard-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 96px;
+    width: 1016px;
+}
+
+.screen .view-2 {
+    height: 95px;
+    left: 48px;
+    position: absolute;
+    top: 236px;
+    width: 1016px;
+}
+
+.screen .view-3 {
+    height: 95px;
+    left: 48px;
+    position: absolute;
+    top: 376px;
+    width: 1016px;
+}
+
+.screen .view-4 {
+    height: 95px;
+    left: 48px;
+    position: absolute;
+    top: 516px;
+    width: 1016px;
+}
+
+.Schebox {
+    margin-top: 45px;
+    margin-left: 60px;
+    position: relative;
+    height: 737px;
+    width: 1120px;
+    border: 3px solid #ccc;
+}
+.section-icon2 {
+    position: absolute;
+    left: -5px;
+    top: -45px;
+    bottom: 36.46%;
+    width: 50px;
+    height: 150px;
+    color: rgba(117, 117, 117, 1);
+}
+.timebox {
+    width: 573px;
+    flex-shrink: 0;
+    border: 3px solid #ccc;
+    background: #fff;
+    margin: 0 auto;
+}
+.time {
+    display: flex;
+    flex-direction: row;
+}
+.timetop {
+    width: 573px;
+    height: 87px;
+    flex-shrink: 0;
+    border-bottom: 3px solid #ccc;
+    background: #ffe05e;
+    color: #4c4c4c;
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: center;
+    line-height: 87px;
+}
+.time1 {
+    text-align: center;
+    line-height: 63px;
+    width: 148px;
+    height: 63px;
+    border-bottom: 3px solid #ccc;
+    background: #ffe05e;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
+.time12 {
+    text-align: center;
+    line-height: 63px;
+    width: 148px;
+    height: 63px;
+    background: #ffe05e;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
+.time2 {
+    width: 426px;
+    height: 63px;
+    border-bottom: 3px solid #ccc;
+    background: #fff;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
+.time22 {
+    width: 426px;
+    height: 63px;
+    background: #fff;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
