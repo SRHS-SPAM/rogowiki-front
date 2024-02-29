@@ -1,66 +1,34 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
 import "../styles/mainbox.css";
-import useComponentSize from "../tool/size";
+import { useSize } from "../tool/SizeContext";
 import DocumentMain from "./documentMain";
+import Pyo from "./mainboxcomponents/pyo";
+import Time from "./mainboxcomponents/time";
 import Opentab from "./opentabs";
 import OpentabEmpty from "./opentabsEmpty";
 
-const data1 = [
-    "교훈",
-    "개교",
-    "유형",
-    "성별",
-    "형태",
-    "교목",
-    "교화",
-    "교장",
-    "교감",
-    "학생 수",
-    "교직원 수",
-    "관할 교육청",
-    "주소",
-    "홈페이지",
-];
-const data2 = [
-    "勤勉(근면), 知性(지성), 創造(창조)",
-    "1994년 1월 3일 강남공업고등학교",
-    "마이스터고등학교",
-    "남녀공학",
-    "공립",
-    "은행나무",
-    "철쭉",
-    "강상욱",
-    "김성호",
-    "420명 (2023.03.01)",
-    "85명 (2023.03.01)",
-    "서울특별시교육청 (강남서초)",
-    "서울특별시 강남구 광평로 20길 63",
-    "https://srobot.sen.hs.kr/",
-];
-const time1 = [
-    "1교시",
-    "2교시",
-    "3교시",
-    "4교시",
-    "점심시간",
-    "5교시",
-    "6교시",
-    "7교시",
-];
-const time2 = [
-    "8시 40분 ~ 9시 30분",
-    "9시 40분 ~ 10시 30분",
-    "10시 40분 ~ 11시 30분",
-    "11시 40분 ~ 12시 30분",
-    "12시 30분 ~ 13시 20분",
-    "13시 20분 ~ 14시 10분",
-    "14시 20분 ~ 15시 10분",
-    "15시 20분 ~ 16시 10분",
-];
-
 const MainBox = () => {
+    const { sizeValue } = useSize();
+    let value1size: number[][] = [[0], [0], [0]];
+    let value2size: number[][] = [[0], [0], [0]];
+    if (sizeValue) {
+        value1size = [[40, 40], [40, 40], [40]];
+        value2size = [
+            [40, 24],
+            [40, 24],
+            [40, 24],
+            [40, 24],
+        ];
+    } else {
+        value1size = [[10, 10], [10, 10], [10]];
+        value2size = [
+            [14, 10],
+            [14, 10],
+            [14, 10],
+            [14, 10],
+        ];
+    }
     return (
         <div className="mainbox">
             <DocumentMain category={["로고위키"]} title={["로고위키:대문"]}>
@@ -83,7 +51,7 @@ const MainBox = () => {
                         ],
                     ]}
                     title={"개요"}
-                    size={[[], [], []]}
+                    size={value1size}
                     color={["", "", "#000"]}
                 />
                 <Opentab
@@ -106,12 +74,7 @@ const MainBox = () => {
                             "군 특성화과정을 운영하는 학과로 첨단로봇분야의 설계, 제어, 모션, 센서, 마이크로프로세서 및 프로그래밍에 대한 지식과 기능•기술을 바탕으로 군 정보통신 및 로봇개발, 드론, IOT 등 첨단로봇분야의 영마이스터 양성",
                         ],
                     ]}
-                    size={[
-                        [40, 24],
-                        [40, 24],
-                        [40, 24],
-                        [40, 24],
-                    ]}
+                    size={value2size}
                     color={["", "", ""]}
                 />
                 <OpentabEmpty title={"일과"}>
@@ -123,89 +86,43 @@ const MainBox = () => {
 };
 
 export default MainBox;
-export const Time = () => {
-    return (
-        <div className="timebox">
-            <div className="timetop">시간표</div>
-            <div className="time">
-                <div>
-                    {time1.map((item, index) => (
-                        <div
-                            key={index}
-                            className={item === "7교시" ? "time12" : "time1"}
-                        >
-                            {item}
-                        </div>
-                    ))}
-                </div>
-                <div>
-                    {time2.map((item, index) => (
-                        <div
-                            key={index}
-                            className={
-                                item === "15시 20분 ~ 16시 10분"
-                                    ? "time22"
-                                    : "time2"
-                            }
-                        >
-                            {item}
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    );
-};
+
 export const Tree = () => {
+    const { sizeValue } = useSize();
+    let titlesize3: number = 0;
+    let titlesize4: number = 0;
+    let titlesize5: number = 0;
+    if (sizeValue) {
+        titlesize3 = 28;
+        titlesize4 = 18;
+        titlesize5 = 15;
+    } else {
+        titlesize3 = 14;
+        titlesize4 = 12;
+        titlesize5 = 9;
+    }
     return (
         <div className="tree">
-            <span className="tree1">여러분이 가꾸어 나가는 </span>
-            <span className="tree2">
+            <span className="tree1" style={{ fontSize: titlesize3 }}>
+                여러분이 가꾸어 나가는{" "}
+            </span>
+            <span className="tree2" style={{ fontSize: titlesize3 }}>
                 지식의 나무
                 <br />
             </span>
-            <span className="tree3">로고위키</span>
-            <span className="tree4">
+            <span className="tree3" style={{ fontSize: titlesize4 }}>
+                로고위키
+            </span>
+            <span className="tree4" style={{ fontSize: titlesize4 }}>
                 에 오신 것을 환영합니다!
                 <br />
                 <br />
             </span>
-            <span className="tree5">
+            <span className="tree5" style={{ fontSize: titlesize5 }}>
                 로고위키는 누구나 기여할 수 있는 위키입니다.
                 <br />
                 검증되지 않았거나 편향된 내용이 있을 수 있습니다.
             </span>
-        </div>
-    );
-};
-export const Pyo = () => {
-    return (
-        <div className="pyomain">
-            <div className="pyo1">
-                <div className="pyo3">
-                    <div className="pyo4">서울로봇고등학교</div>
-                    <div className="pyo5">SEOUL ROBOTICS HIGH SCHOOL</div>
-                </div>
-            </div>
-            <div className="img">
-                <img src="srh.png" alt="srh_logo" className="srh" />
-            </div>
-            <div className="saero">
-                <div>
-                    {data1.map((item, index) => (
-                        <div key={index} className="yb">
-                            {item}
-                        </div>
-                    ))}
-                </div>
-                <div>
-                    {data2.map((item, index) => (
-                        <div key={index} className="wb">
-                            {item}
-                        </div>
-                    ))}
-                </div>
-            </div>
         </div>
     );
 };

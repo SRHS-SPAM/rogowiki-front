@@ -1,49 +1,43 @@
 "use client";
 
+import React from "react";
 import "../styles/footer.css";
-import useComponentSize from "../tool/size";
+import { useSize } from "../tool/SizeContext";
 
 const Footer = () => {
-    const [componentRef, size] = useComponentSize();
-    const renderContent = () => {
-        if (size.width > 800) {
-            return (
-                <div className="footer">
-                    <div className="main2">
-                        <div className="images">
-                            <img src="github.png" alt="git" className="git" />
-                            <div className="text">|</div>
-                            <img src="insta.png" alt="insta" className="git" />
-                        </div>
-                        <div className="email">
-                            rogo.wiki | msg2324@srh-spam.com | SPAM | PROJECT
-                            ROGOWIKI{" "}
-                        </div>
+    const { sizeValue, setGlobalSizeValue } = useSize();
+    if (sizeValue) {
+        return (
+            <div className="footer">
+                <div className="main2">
+                    <div className="images">
+                        <img src="github.png" alt="git" className="git" />
+                        <div className="text">|</div>
+                        <img src="insta.png" alt="insta" className="git" />
+                    </div>
+                    <div className="email">
+                        rogo.wiki | msg2324@srh-spam.com | SPAM | PROJECT
+                        ROGOWIKI{" "}
                     </div>
                 </div>
-            );
-        } else {
-            return (
-                <div className="footer">
-                    <div className="main2">
-                        <div className="images">
-                            <img src="github.png" alt="git" className="git" />
-                            <div className="text">|</div>
-                            <img src="insta.png" alt="insta" className="git" />
-                        </div>
-                        <div className="email2">
-                            rogo.wiki | msg2324@srh-spam.com | SPAM | PROJECT
-                            ROGOWIKI
-                        </div>
+            </div>
+        );
+    } else {
+        return (
+            <div className="footer">
+                <div className="main2">
+                    <div className="images">
+                        <img src="github.png" alt="git" className="git" />
+                        <div className="text">|</div>
+                        <img src="insta.png" alt="insta" className="git" />
+                    </div>
+                    <div className="email2">
+                        rogo.wiki | msg2324@srh-spam.com | SPAM | PROJECT
+                        ROGOWIKI
                     </div>
                 </div>
-            );
-        }
-    };
-    return (
-        <div className="footer" ref={componentRef}>
-            {renderContent()}
-        </div>
-    );
+            </div>
+        );
+    }
 };
 export default Footer;

@@ -1,13 +1,20 @@
 "use client";
 
-import useComponentSize from "../tool/size";
 import "../styles/header.css";
+import { useSize } from "../tool/SizeContext";
+import useComponentSize from "../tool/size";
 import { Search } from "lucide-react";
 
 const Header = () => {
+    const { sizeValue, setGlobalSizeValue } = useSize();
     const [componentRef, size] = useComponentSize();
+    if (size.width > 800) {
+        setGlobalSizeValue(true);
+    } else {
+        setGlobalSizeValue(false);
+    }
     const renderContent = () => {
-        if (size.width > 1000) {
+        if (sizeValue) {
             // 가로너비가 600보다 큰 경우
             return (
                 <div className="header">
@@ -38,38 +45,39 @@ const Header = () => {
             );
         } else {
             return (
-                <div className="header2">
-                    <div className="main23">
-                        <img src="logo.png" alt="logo2" className="logo2" />
-                        <div className="any23">
-                            <div className="list">
-                                <button className="p2">학교</button>
-                                <button className="p2">공지</button>
-                                <button className="p3">글쓰기</button>
-                                <button className="p2">정보</button>
-                                <div className="log2">
-                                    <button className="e2">로그인</button>
+                <div className="header">
+                    <div className="header2">
+                        <div className="main23">
+                            <img src="logo.png" alt="logo2" className="logo2" />
+                            <div className="any23">
+                                <div className="list">
+                                    <button className="p2">학교</button>
+                                    <button className="p2">공지</button>
+                                    <button className="p3">글쓰기</button>
+                                    <button className="p2">정보</button>
+                                    <div className="log2">
+                                        <button className="e2">로그인</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="searchbox2">
-                        <button className="searchtext2">
-                            <div className="searchtext3">검색하기</div>
-                        </button>
-                        <input type="text" className="search3"></input>
-                        <div className="search22">
-                            <Search color="#FFE05E" className="searchlogo2" />
+                        <div className="searchbox2">
+                            <button className="searchtext2">
+                                <div className="searchtext3">검색하기</div>
+                            </button>
+                            <input type="text" className="search3"></input>
+                            <div className="search22">
+                                <Search
+                                    color="#FFE05E"
+                                    className="searchlogo2"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
             );
         }
     };
-    return (
-        <div className="header" ref={componentRef}>
-            {renderContent()}
-        </div>
-    );
+    return <div ref={componentRef}>{renderContent()}</div>;
 };
 export default Header;

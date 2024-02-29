@@ -1,0 +1,157 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+.timebox {
+    width: 100%;
+    flex-shrink: 0;
+    border: 3px solid #ccc;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.timetop {
+    height: 87px;
+    flex-shrink: 0;
+    border-bottom: 3px solid #ccc;
+    background: #ffe05e;
+    color: #4c4c4c;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: center;
+    line-height: 87px;
+}
+.time {
+    display: flex;
+    flex-direction: row;
+}
+.time1 {
+    width: 100%;
+    min-width: 148px;
+    text-align: center;
+    line-height: 63px;
+    height: 63px;
+    border-bottom: 3px solid #ccc;
+    background: #ffe05e;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
+.time12 {
+    min-width: 148px;
+    width: 100%;
+    text-align: center;
+    line-height: 63px;
+    height: 63px;
+    background: #ffe05e;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
+.sero {
+    width: 100%;
+}
+.time2 {
+    width: 100%;
+    height: 63px;
+    border-bottom: 3px solid #ccc;
+    background: #fff;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
+.time22 {
+    width: 100%;
+    height: 63px;
+    background: #fff;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 63px;
+    letter-spacing: 1.2px;
+}
+.timetop2 {
+    height: 32px;
+    min-width: 200px;
+    flex-shrink: 0;
+    border-bottom: 1px solid #ccc;
+    background: #ffe05e;
+    color: #4c4c4c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: center;
+    line-height: 32px;
+}
+.Time1 {
+    width: 100%;
+    min-width: 54px;
+    text-align: center;
+    height: 24px;
+    border-bottom: 1px solid #ccc;
+    background: #ffe05e;
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+.Time12 {
+    min-width: 54px;
+    width: 100%;
+    text-align: center;
+    height: 24px;
+    background: #ffe05e;
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+.Time2 {
+    width: 100%;
+    height: 24px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+.Time22 {
+    width: 100%;
+    height: 24px;
+    background: #fff;
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}

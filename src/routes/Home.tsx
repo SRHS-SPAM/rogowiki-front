@@ -1,5 +1,6 @@
 "use client";
 
+import { SizeProvider } from "../tool/SizeContext";
 import "../App.css";
 import Footer from "../_components/footer";
 import Header from "../_components/header";
@@ -15,13 +16,17 @@ const lists = [
 function Home() {
     return (
         <>
-            <Header />
-            <div className="main">
-                <MainBox />
-                {/* <Lists lists={lists} /> */}
-            </div>
+            <SizeProvider>
+                <div className="toempty">
+                    <Header />
 
-            <Footer />
+                    <div className="main">
+                        <MainBox />
+                        {/* <Lists lists={lists} /> */}
+                    </div>
+                    <Footer />
+                </div>
+            </SizeProvider>
         </>
     );
 }
