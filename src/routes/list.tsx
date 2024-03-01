@@ -5,7 +5,6 @@ import "../App.css";
 import Footer from "../_components/footer";
 import Header from "../_components/header";
 import Lists from "../_components/lists";
-import MainBox from "../_components/mainbox";
 
 const lists = [
     "[학생]국재윤",
@@ -13,15 +12,14 @@ const lists = [
     "[동아리]산업용로봇",
     "[분류]제목",
 ];
-function Home() {
+function List() {
     return (
         <>
             <SizeProvider>
                 <div className="toempty">
                     <Header />
                     <div className="mainasd">
-                        <MainBox />
-                        {/* <Lists lists={lists} /> */}
+                        <Lists lists={lists} />
                     </div>
                     <Footer />
                 </div>
@@ -30,4 +28,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default List;

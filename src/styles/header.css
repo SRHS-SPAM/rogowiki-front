@@ -51,6 +51,7 @@ body {
     font-style: normal;
     font-weight: 600;
     cursor: pointer;
+    text-align: center;
 }
 
 .searchbox {
@@ -169,6 +170,7 @@ body {
     font-style: normal;
     font-weight: 600;
     cursor: pointer;
+    text-align: center;
 }
 .p3 {
     margin-top: -4px;

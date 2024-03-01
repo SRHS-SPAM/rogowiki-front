@@ -1,12 +1,12 @@
 "use client";
 
-import { SizeProvider } from "../../tool/SizeContext";
+import { SizeProvider } from "../tool/SizeContext";
 import "../App.css";
-import ClassList from "../../_components/class";
-import Footer from "../../_components/footer";
-import Header from "../../_components/header";
-import Lists from "../../_components/lists";
-import MainBox from "../../_components/mainbox";
+import ClassList from "../_components/class";
+import Footer from "../_components/footer";
+import Header from "../_components/header";
+import Lists from "../_components/lists";
+import MainBox from "../_components/mainbox";
 
 const teacherList = [
     "1반쌤",
@@ -46,19 +46,19 @@ const lists = [
     "[동아리]산업용로봇",
     "[분류]제목",
 ];
-function Home() {
+function Student() {
     return (
         <>
             <SizeProvider>
                 <div className="toempty">
                     <Header />
                     <div className="mainasd">
-                        <MainBox />
+                        {/* <MainBox /> */}
                         {/* <Lists lists={lists} /> */}
-                        {/* <ClassList
+                        <ClassList
                             teacherlist={teacherList}
                             studentlist={studentList}
-                        /> */}
+                        />
                     </div>
                     <Footer />
                 </div>
@@ -67,4 +67,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Student;

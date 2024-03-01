@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "react-router-dom";
 import "../styles/header.css";
 import { useSize } from "../tool/SizeContext";
 import useComponentSize from "../tool/size";
@@ -22,7 +23,13 @@ const Header = () => {
                         <div className="any">
                             <img src="logo.png" alt="logo" className="logo" />
                             <div className="list">
-                                <button className="p">글목록</button>
+                                <Link
+                                    to="/list"
+                                    className="p"
+                                    style={{ textDecoration: "none" }}
+                                >
+                                    글목록
+                                </Link>
                                 <button className="p">공지</button>
                                 <button className="p">글쓰기</button>
                                 <button className="p">정보</button>
@@ -51,7 +58,13 @@ const Header = () => {
                             <img src="logo.png" alt="logo2" className="logo2" />
                             <div className="any23">
                                 <div className="list">
-                                    <button className="p2">글목록</button>
+                                    <Link
+                                        to="/list"
+                                        className="p2"
+                                        style={{ textDecoration: "none" }}
+                                    >
+                                        글목록
+                                    </Link>
                                     <button className="p2">공지</button>
                                     <button className="p3">글쓰기</button>
                                     <button className="p2">정보</button>
