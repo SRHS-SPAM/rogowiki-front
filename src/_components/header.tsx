@@ -8,7 +8,7 @@ import { Search } from "lucide-react";
 const Header = () => {
     const { sizeValue, setGlobalSizeValue } = useSize();
     const [componentRef, size] = useComponentSize();
-    if (size.width > 800) {
+    if (size.width > 1070) {
         setGlobalSizeValue(true);
     } else {
         setGlobalSizeValue(false);
@@ -51,7 +51,7 @@ const Header = () => {
                             <img src="logo.png" alt="logo2" className="logo2" />
                             <div className="any23">
                                 <div className="list">
-                                    <button className="p2">학교</button>
+                                    <button className="p2">글목록</button>
                                     <button className="p2">공지</button>
                                     <button className="p3">글쓰기</button>
                                     <button className="p2">정보</button>

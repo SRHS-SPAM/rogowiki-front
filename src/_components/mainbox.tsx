@@ -12,6 +12,7 @@ const MainBox = () => {
     const { sizeValue } = useSize();
     let value1size: number[][] = [[0], [0], [0]];
     let value2size: number[][] = [[0], [0], [0]];
+    let mainsize: string = "";
     if (sizeValue) {
         value1size = [[40, 40], [40, 40], [40]];
         value2size = [
@@ -20,6 +21,7 @@ const MainBox = () => {
             [40, 24],
             [40, 24],
         ];
+        mainsize = "mainbox";
     } else {
         value1size = [[10, 10], [10, 10], [10]];
         value2size = [
@@ -28,9 +30,10 @@ const MainBox = () => {
             [14, 10],
             [14, 10],
         ];
+        mainsize = "mainbox2";
     }
     return (
-        <div className="mainbox">
+        <div className={mainsize}>
             <DocumentMain category={["로고위키"]} title={["로고위키:대문"]}>
                 <Tree />
                 <div className="line"></div>

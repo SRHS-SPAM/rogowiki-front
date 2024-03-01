@@ -19,7 +19,6 @@ function Home() {
             <SizeProvider>
                 <div className="toempty">
                     <Header />
-
                     <div className="main">
                         <MainBox />
                         {/* <Lists lists={lists} /> */}
