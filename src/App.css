@@ -3,6 +3,7 @@ body {
     font-family: "Noto Sans KR", sans-serif;
     flex-direction: column;
 }
+
 .mainasd {
     margin: 224px 0;
     display: flex;
