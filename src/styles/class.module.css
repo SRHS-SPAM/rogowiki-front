@@ -1,0 +1,79 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+.classall {
+    width: 100%;
+}
+.classbox {
+    height: 100px;
+    background: #ffec9a;
+    text-align: center;
+    margin-top: 20px;
+}
+.classban {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ban {
+    margin-top: 10px;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.click {
+    margin-top: 10px;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+.classteacher {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 47px;
+    text-align: center;
+    width: 100%-2px;
+    height: 47px;
+    border: 1px solid #000;
+    background: #ffec9a;
+}
+.classtitle {
+    color: #ca9200;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 47px;
+    text-align: center;
+    width: 100%-2px;
+    height: 47px;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.students {
+    width: calc(100%-1px);
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid #000;
+    flex-wrap: wrap;
+}
+
+.student {
+    line-height: 47px;
+    text-align: center;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    width: calc(25% - 1px);
+    height: 47px;
+    border-bottom: 1px solid #000;
+    color: #ca9200;
+}
