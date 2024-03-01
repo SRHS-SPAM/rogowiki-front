@@ -3,7 +3,7 @@ body {
 }
 .mainbox {
     min-width: 350px;
-    width: 70%;
+    width: 55%;
     flex-shrink: 0;
     background: #fff;
     margin: 224px 0;
@@ -91,6 +91,7 @@ body {
     font-family: Pretendard;
     font-weight: 400;
     word-wrap: break-word;
+    font-family: "Noto Sans KR", sans-serif;
 }
 .tree2 {
     color: #ffe500;
@@ -98,6 +99,7 @@ body {
     font-family: Pretendard;
     font-weight: 400;
     word-wrap: break-word;
+    font-family: "Noto Sans KR", sans-serif;
 }
 .tree3 {
     color: #ffe500;
@@ -105,6 +107,7 @@ body {
     font-family: Pretendard;
     font-weight: 400;
     word-wrap: break-word;
+    font-family: "Noto Sans KR", sans-serif;
 }
 .tree4 {
     color: #666666;
@@ -112,6 +115,7 @@ body {
     font-family: Pretendard;
     font-weight: 400;
     word-wrap: break-word;
+    font-family: "Noto Sans KR", sans-serif;
 }
 .tree5 {
     color: #666666;
@@ -119,6 +123,7 @@ body {
     font-family: Pretendard;
     font-weight: 400;
     word-wrap: break-word;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 .main-container {

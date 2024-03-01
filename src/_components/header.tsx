@@ -36,9 +36,9 @@ const Header = () => {
                                     className="searchlogo"
                                 />
                             </div>
-                        </div>
-                        <div className="log">
-                            <button className="e">로그인</button>
+                            <div className="log">
+                                <button className="e">로그인</button>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@ function Home() {
             <SizeProvider>
                 <div className="toempty">
                     <Header />
-                    <div className="main">
+                    <div className="mainasd">
                         <MainBox />
                         {/* <Lists lists={lists} /> */}
                     </div>

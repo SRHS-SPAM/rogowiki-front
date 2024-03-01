@@ -3,10 +3,7 @@ body {
     font-family: "Noto Sans KR", sans-serif;
     flex-direction: column;
 }
-.main {
+.mainasd {
     display: flex;
     justify-content: center;
-}
-.toempty {
-    margin-bottom: 100%;
 }
