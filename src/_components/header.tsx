@@ -21,7 +21,13 @@ const Header = () => {
                 <div className="header">
                     <div className="main">
                         <div className="any">
-                            <img src="logo.png" alt="logo" className="logo" />
+                            <Link to="/">
+                                <img
+                                    src="logo.png"
+                                    alt="Main Logo"
+                                    className="logo"
+                                />
+                            </Link>
                             <div className="list">
                                 <Link
                                     to="/list"
@@ -55,7 +61,13 @@ const Header = () => {
                 <div className="header">
                     <div className="header2">
                         <div className="main23">
-                            <img src="logo.png" alt="logo2" className="logo2" />
+                            <Link to="/">
+                                <img
+                                    src="logo.png"
+                                    alt="Main Logo"
+                                    className="logo2"
+                                />
+                            </Link>
                             <div className="any23">
                                 <div className="list">
                                     <Link

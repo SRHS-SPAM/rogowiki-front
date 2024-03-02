@@ -5,8 +5,7 @@ import "../App.css";
 import ClassList from "../_components/class";
 import Footer from "../_components/footer";
 import Header from "../_components/header";
-import Lists from "../_components/lists";
-import MainBox from "../_components/mainbox";
+import { Helmet } from "react-helmet";
 
 const teacherList = [
     "1반쌤",
@@ -49,6 +48,10 @@ const lists = [
 function Student() {
     return (
         <>
+            <Helmet>
+                <title>학생 목록</title>
+                <meta name="description" content="학생 목록" />
+            </Helmet>
             <SizeProvider>
                 <div className="toempty">
                     <Header />

@@ -5,6 +5,7 @@ import "../App.css";
 import Footer from "../_components/footer";
 import Header from "../_components/header";
 import Lists from "../_components/lists";
+import { Helmet } from "react-helmet";
 
 const lists = [
     "[학생]국재윤",
@@ -15,6 +16,10 @@ const lists = [
 function List() {
     return (
         <>
+            <Helmet>
+                <title>글목록</title>
+                <meta name="description" content="최근 글목록" />
+            </Helmet>
             <SizeProvider>
                 <div className="toempty">
                     <Header />
