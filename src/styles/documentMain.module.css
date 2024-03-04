@@ -8,20 +8,19 @@ body {
     flex-direction: column;
     padding: 5rem;
     border: 2.5px #cccccc solid;
-    height: 100%;
 }
-
 .subbox {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 7rem;
+    gap: 3rem;
     padding-bottom: 4%;
     margin-bottom: 3rem;
     border-bottom: 1px #a8a8a8 solid;
 }
 
 .titlebox {
+    margin-top: -30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,9 +35,11 @@ body {
     border: 1.5px #cccccc solid;
     padding: 0.5rem 1.5rem;
     cursor: pointer;
+    min-width: 30px;
 }
 
 .category {
+    min-width: 141px;
     border: 1.5px #cccccc solid;
     padding: 0.5rem 2rem;
     font-weight: 400;

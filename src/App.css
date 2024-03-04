@@ -1,8 +1,11 @@
 /* App.css */
 body {
     font-family: "Noto Sans KR", sans-serif;
+    flex-direction: column;
 }
-.main {
+
+.mainasd {
+    margin: 224px 0;
     display: flex;
     justify-content: center;
 }

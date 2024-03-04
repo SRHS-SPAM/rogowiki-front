@@ -1,4 +1,5 @@
 import styles from "../styles/lists.module.css";
+import { useSize } from "../tool/SizeContext";
 import useComponentSize from "../tool/size";
 
 interface ListsProps {
@@ -7,8 +8,9 @@ interface ListsProps {
 
 const Lists = ({ lists }: ListsProps) => {
     const [componentRef, size] = useComponentSize();
+    const { sizeValue } = useSize();
     const renderContent = () => {
-        if (size.width > 480) {
+        if (sizeValue) {
             return (
                 <div className={styles.listMain}>
                     <div className={styles.listTitle}>글 목록</div>

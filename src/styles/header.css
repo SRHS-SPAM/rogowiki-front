@@ -11,13 +11,16 @@ body {
 }
 
 .main {
+    display: flex;
     background: rgba(255, 224, 94, 1);
     height: 72px;
     width: 100%;
     justify-content: space-around;
 }
 .any {
-    width: 30%;
+    margin-left: -5%;
+    width: 40%;
+    gap: 7%;
     min-width: 513px;
     display: flex;
     flex-direction: row;
@@ -25,7 +28,8 @@ body {
     /* border: 3px #cccccc solid; */
 }
 .logo {
-    height: 65px;
+    margin-top: 8px;
+    height: 50px;
     cursor: pointer;
 }
 .list {
@@ -36,7 +40,7 @@ body {
 }
 
 .p {
-    margin-top: 18px;
+    margin-top: 21px;
     border: none;
     background: none;
     width: 100%;
@@ -47,16 +51,18 @@ body {
     font-style: normal;
     font-weight: 600;
     cursor: pointer;
+    text-align: center;
 }
 
 .searchbox {
     display: flex;
     min-width: 200px;
-    width: 15%;
+    width: 20%;
     flex-direction: row;
     /* border: 3px #cccccc solid; */
 }
 .search {
+    min-width: 170px;
     margin-top: 17px;
     width: 79%;
     height: 35px;
@@ -74,6 +80,7 @@ body {
     outline: none;
 }
 .search2 {
+    margin-right: 5%;
     margin-left: 2%;
     margin-top: 17px;
     height: 37px;
@@ -104,7 +111,7 @@ body {
     margin-top: 30px;
 }
 .log {
-    margin-top: -5px;
+    margin-top: -4px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -137,7 +144,7 @@ body {
     z-index: 1000;
 }
 .main23 {
-    height: 50px;
+    height: 100%;
     width: 100%;
     background: #ffe05e;
 }
@@ -149,6 +156,7 @@ body {
     /* border: 3px #cccccc solid; */
 }
 .logo2 {
+    margin: 2% 7%;
     width: 80px;
     cursor: pointer;
 }
@@ -156,12 +164,13 @@ body {
     margin-top: -4px;
     border: none;
     background: none;
-    width: 34px;
+    min-width: 30px;
     height: 13px;
     font-size: 11px;
     font-style: normal;
     font-weight: 600;
     cursor: pointer;
+    text-align: center;
 }
 .p3 {
     margin-top: -4px;

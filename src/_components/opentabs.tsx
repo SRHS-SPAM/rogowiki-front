@@ -1,4 +1,6 @@
 import styles from "../styles/opentab.module.css";
+import { useSize } from "../tool/SizeContext";
+import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,8 +14,17 @@ interface OpentabProps {
 }
 
 function Opentab({ title, value, size, color }: OpentabProps) {
+    let titlesize: number = 0;
+    let iconsize: string = "";
+    const { sizeValue } = useSize();
     const [isOpen, setIsOpen] = useState(false);
-
+    if (sizeValue) {
+        titlesize = 40;
+        iconsize = "2x";
+    } else {
+        titlesize = 20;
+        iconsize = "x";
+    }
     const handleTopboxClick = () => {
         setIsOpen(!isOpen);
     };
@@ -33,10 +44,13 @@ function Opentab({ title, value, size, color }: OpentabProps) {
                     <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#757575" }}
-                        size="2x"
+                        size={iconsize as SizeProp}
                     />
                 </div>
-                <div className={styles.open_title} style={{ fontSize: 40 }}>
+                <div
+                    className={styles.open_title}
+                    style={{ fontSize: titlesize }}
+                >
                     {title}
                 </div>
             </div>
