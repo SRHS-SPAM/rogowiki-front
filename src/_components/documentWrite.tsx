@@ -1,7 +1,6 @@
 import styles from "../styles/documentWrite.module.css";
 import React from "react";
 import MDEditor from "@uiw/react-markdown-editor";
-import { md } from "node-forge";
 import MdEditor from "./mdEditor";
 
 const DocumentMain = () => {
