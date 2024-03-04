@@ -16,7 +16,12 @@
     "lucide-react": "^0.341.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-router-dom": "^6.22.1",
+=======
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.22.2",
+>>>>>>> 7686b9c1784d1c6af38a9031a0e2a76fd0bc1458
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
@@ -45,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-helmet": "^6.1.11"
   }
 }
