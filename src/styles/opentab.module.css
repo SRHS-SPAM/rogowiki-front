@@ -1,4 +1,42 @@
 body {
+<<<<<<< HEAD
+  height: 100vh;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+}
+
+.mainbox {
+  width: 100%;
+  height: 100%;
+}
+
+.topbox {
+  border-bottom: 3px #cccccc solid;
+  display: flex;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  gap: 1rem;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.topbox {
+  /* 스타일 정의 */
+  cursor: pointer;
+}
+
+.botbox {
+  padding: 2rem;
+  color: #666;
+}
+
+.open_arrow {
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(90deg);
+=======
     height: 100vh;
     box-sizing: border-box;
     text-overflow: ellipsis;
@@ -36,4 +74,5 @@ body {
 
 .rotated {
     transform: rotate(90deg);
+>>>>>>> test
 }

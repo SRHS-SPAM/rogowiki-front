@@ -7,8 +7,51 @@ body {
   display: flex;
   flex-direction: column;
   border: 2.5px #cccccc solid;
+  height: 100%;
 }
 
 .titlebox {
   display: flex;
+  padding: 3rem;
+  justify-content: space-between;
+  font-family: Pretendard;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  font-size: small;
+  padding: 0rem 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.writeheader {
+  display: flex;
+}
+
+.pagetab {
+  padding: 0.4rem 1.2rem;
+  border: 1.5px #cccccc solid;
+  background-color: rgb(240, 240, 240);
+}
+
+.miniheader {
+  display: flex;
+}
+
+.writesetting {
+  display: flex;
+  padding: 0rem 1rem;
+  font-weight: 600;
+}
+
+.writemain {
+  height: 500px;
 }
