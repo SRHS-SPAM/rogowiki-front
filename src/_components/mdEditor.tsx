@@ -3,7 +3,7 @@ import MDEditor from "@uiw/react-md-editor";
 import styles from "../styles/documentWrite.module.css";
 
 const MdEditor = () => {
-  const [markdown, setMarkdown] = useState("# Hello, Markdown!");
+  const [markdown, setMarkdown] = useState("");
 
   return (
     <div className={styles.writemain} style={{ overflow: "auto" }}>
