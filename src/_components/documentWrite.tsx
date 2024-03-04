@@ -1,10 +1,11 @@
 import styles from "../styles/documentWrite.module.css";
-import React from "react";
+import React, { useState } from "react";
 import MDEditor from "@uiw/react-markdown-editor";
 import MdEditor from "./mdEditor";
-import { useState } from "react";
 
 const DocumentWrite = () => {
+  const [selectedValue, setSelectedValue] = useState<string>("Option 1");
+
   return (
     <div className={styles.mainbox}>
       <div className={styles.titlebox}>
@@ -12,7 +13,41 @@ const DocumentWrite = () => {
           <div className={styles.title}>로고위키</div>
           <div className={styles.delete}>삭제</div>
         </div>
-        <div className={styles.titlebot}>테스트용</div>
+        <div className={styles.titlebot}>
+          <div>
+            <input
+              type="radio"
+              id="option1"
+              name="testOptions"
+              value="Option 1"
+              checked={selectedValue === "Option 1"}
+              onChange={() => setSelectedValue("Option 1")}
+            />
+            <label htmlFor="option1">학생</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="option2"
+              name="testOptions"
+              value="Option 2"
+              checked={selectedValue === "Option 2"}
+              onChange={() => setSelectedValue("Option 2")}
+            />
+            <label htmlFor="option2">동아리</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="option3"
+              name="testOptions"
+              value="Option 3"
+              checked={selectedValue === "Option 3"}
+              onChange={() => setSelectedValue("Option 3")}
+            />
+            <label htmlFor="option3">선생님</label>
+          </div>
+        </div>
       </div>
       <div className={styles.category}>
         <div className={styles.categoryinfo}></div>
@@ -26,7 +61,7 @@ const DocumentWrite = () => {
           </div>
         </div>
         <div className={styles.writemain}>
-          <MdEditor />
+          <MdEditor selectedValue={selectedValue} />
         </div>
       </div>
     </div>
