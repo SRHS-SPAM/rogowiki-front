@@ -2,13 +2,17 @@ import styles from "../styles/documentWrite.module.css";
 import React from "react";
 import MDEditor from "@uiw/react-markdown-editor";
 import MdEditor from "./mdEditor";
+import { useState } from "react";
 
-const DocumentMain = () => {
+const DocumentWrite = () => {
   return (
     <div className={styles.mainbox}>
       <div className={styles.titlebox}>
-        <div className={styles.title}>로고위키</div>
-        <div className={styles.delete}>삭제</div>
+        <div className={styles.titletop}>
+          <div className={styles.title}>로고위키</div>
+          <div className={styles.delete}>삭제</div>
+        </div>
+        <div className={styles.titlebot}>테스트용</div>
       </div>
       <div className={styles.category}>
         <div className={styles.categoryinfo}></div>
@@ -29,4 +33,4 @@ const DocumentMain = () => {
   );
 };
 
-export default DocumentMain;
+export default DocumentWrite;

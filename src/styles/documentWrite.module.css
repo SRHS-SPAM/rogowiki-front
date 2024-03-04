@@ -13,8 +13,10 @@ body {
 .titlebox {
   display: flex;
   padding: 3rem;
+  flex-direction: column;
   justify-content: space-between;
   font-family: Pretendard;
+  gap: 1rem;
 }
 
 .title {
@@ -54,4 +56,9 @@ body {
 
 .writemain {
   height: 500px;
+}
+
+.titletop {
+  display: flex;
+  justify-content: space-between;
 }
