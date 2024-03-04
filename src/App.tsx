@@ -3,6 +3,8 @@
 import Home from "./routes/Home";
 import DocumentWrite from "./_components/documentWrite";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import List from "./routes/list";
+import Student from "./routes/page";
 
 function App() {
   return (
