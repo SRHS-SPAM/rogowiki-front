@@ -43,7 +43,13 @@ const DocumentWrite = () => {
               name="testOptions"
               value="Option 3"
               checked={selectedValue === "Option 3"}
-              onChange={() => setSelectedValue("Option 3")}
+              onChange={() =>
+                setSelectedValue(
+                  (prevValue) => `${prevValue}
+                # 개요 개요
+                ssadas`
+                )
+              }
             />
             <label htmlFor="option3">선생님</label>
           </div>
