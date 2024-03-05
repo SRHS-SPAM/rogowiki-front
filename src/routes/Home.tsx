@@ -1,6 +1,7 @@
 "use client";
 
 import { SizeProvider } from "../tool/SizeContext";
+import View from "../_components/view";
 import "../App.css";
 import Footer from "../_components/footer";
 import Header from "../_components/header";
@@ -18,7 +19,8 @@ function Home() {
                 <div className="toempty">
                     <Header />
                     <div className="mainasd">
-                        <MainBox />
+                        <View />
+                        {/* <MainBox /> */}
                     </div>
                     <Footer />
                 </div>
