@@ -13,47 +13,7 @@ const DocumentWrite = () => {
           <div className={styles.title}>로고위키</div>
           <div className={styles.delete}>삭제</div>
         </div>
-        <div className={styles.titlebot}>
-          <div>
-            <input
-              type="radio"
-              id="option1"
-              name="testOptions"
-              value="Option 1"
-              checked={selectedValue === "Option 1"}
-              onChange={() => setSelectedValue("Option 1")}
-            />
-            <label htmlFor="option1">학생</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="option2"
-              name="testOptions"
-              value="Option 2"
-              checked={selectedValue === "Option 2"}
-              onChange={() => setSelectedValue("Option 2")}
-            />
-            <label htmlFor="option2">동아리</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="option3"
-              name="testOptions"
-              value="Option 3"
-              checked={selectedValue === "Option 3"}
-              onChange={() =>
-                setSelectedValue(
-                  (prevValue) => `${prevValue}
-                # 개요 개요
-                ssadas`
-                )
-              }
-            />
-            <label htmlFor="option3">선생님</label>
-          </div>
-        </div>
+        <div className={styles.titlebot}></div>
       </div>
       <div className={styles.category}>
         <div className={styles.categoryinfo}></div>
