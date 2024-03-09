@@ -1,7 +1,9 @@
+import Opentab from "../components/opentab";
 import { useSize } from "../tool/SizeContext";
 import ApiComponent from "../tool/apicall";
 // import styled from "@emotion/styled";
 import DocumentMain from "./documentMain";
+import MyComponent from "./mdedit";
 import OpentabEmpty from "./opentabsEmpty";
 import StyledTextComponent from "./titletest";
 import MDEditor from "@uiw/react-md-editor";
@@ -21,20 +23,14 @@ const markdown = `# 논란
  로렘잇섬로렘잇섬로렘잇섬로렘잇섬로렘잇섬
  `;
 
-// const MarkDownStyle = styled.div`
-//   font-size: 1rem;
-//   line-height: 2.5rem;
-// `;
-
 const View = () => {
+    const [list1] = MyComponent({ markdown });
+
     return (
         <DocumentMain category={["학생"]} title={["국재윤"]}>
             <OpentabEmpty title={"내용"}>
                 <OpentabEmpty title={"asdf"}>
-                    {/* <MarkDownStyle> */}
-                    <ReactMarkdown></ReactMarkdown>
-                    {/* </MarkDownStyle> */}
-                    {/* <ApiComponent/> */}
+                    <ReactMarkdown>{markdown}</ReactMarkdown>
                 </OpentabEmpty>
             </OpentabEmpty>
         </DocumentMain>
