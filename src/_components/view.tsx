@@ -1,4 +1,3 @@
-import Opentab from "../components/opentab";
 import { useSize } from "../tool/SizeContext";
 import ApiComponent from "../tool/apicall";
 // import styled from "@emotion/styled";
@@ -11,11 +10,9 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 
 const markdown = `# 논란
- -하나둘셋넷
+ - 하나둘셋넷
 
 - 로렘잇섬로렘잇섬로렘잇섬로렘잇섬로렘잇섬
- 
- \`\`\`지민철\`\`\`
 
  # 어록
  하나둘셋넷
@@ -24,14 +21,18 @@ const markdown = `# 논란
  `;
 
 const View = () => {
-    const [list1] = MyComponent({ markdown });
-
+    const [valuess, titless] = MyComponent({ markdown });
+    console.log(valuess, titless);
     return (
         <DocumentMain category={["학생"]} title={["국재윤"]}>
             <OpentabEmpty title={"내용"}>
-                <OpentabEmpty title={"asdf"}>
-                    <ReactMarkdown>{markdown}</ReactMarkdown>
-                </OpentabEmpty>
+                {titless.map((value, index) => (
+                    <OpentabEmpty title={value}>
+                        <ReactMarkdown>
+                            {valuess[index] + "\n\n" + valuess[index + 1]}
+                        </ReactMarkdown>
+                    </OpentabEmpty>
+                ))}
             </OpentabEmpty>
         </DocumentMain>
     );
