@@ -1,14 +1,19 @@
-import { useSize } from "../tool/SizeContext";
-import ApiComponent from "../tool/apicall";
-// import styled from "@emotion/styled";
+import React, { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 import DocumentMain from "./documentMain";
 import MyComponent from "./mdedit";
 import OpentabEmpty from "./opentabsEmpty";
-import StyledTextComponent from "./titletest";
-import MDEditor from "@uiw/react-md-editor";
-import React from "react";
-import ReactMarkdown from "react-markdown";
-
+import ApiComponent from "../tool/apicall";
+import { useSize } from "../tool/SizeContext";
+interface MyData {
+    _id: string;
+    category: string;
+    date: string;
+    description: string;
+    name: string;
+    title: string;
+    uuid: string;
+}
 const markdown = `# 논란
  - 하나둘셋넷
 
@@ -22,13 +27,26 @@ const markdown = `# 논란
 
 const View = () => {
     const [titless, valuess] = MyComponent({ markdown });
-    console.log(valuess, titless);
+    const [apiData, setApiData] = useState<MyData | null>(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const apiData: MyData = await ApiComponent();
+            setApiData(apiData);
+        };
+
+        fetchData();
+    }, []);
+
+    if (!apiData) {
+        return <p>Loading...</p>;
+    }
+
     return (
-        <DocumentMain category={["학생"]} title={["국재윤"]}>
-            {/* <ApiComponent /> */}
+        <DocumentMain category={[apiData.category]} title={[apiData.title]}>
             <OpentabEmpty title={"내용"}>
                 {titless.map((value, index) => (
-                    <OpentabEmpty title={value}>
+                    <OpentabEmpty title={value} key={index}>
                         <ReactMarkdown>{valuess[index]}</ReactMarkdown>
                     </OpentabEmpty>
                 ))}

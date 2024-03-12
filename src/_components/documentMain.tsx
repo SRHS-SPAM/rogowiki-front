@@ -8,7 +8,7 @@ const DocumentMain = ({
     title,
 }: {
     children: React.ReactNode;
-    category: String[];
+    category: string[];
     title: String[];
 }) => {
     const { sizeValue, setGlobalSizeValue } = useSize();
