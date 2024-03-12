@@ -15,10 +15,10 @@ body {
     background: rgba(255, 224, 94, 1);
     height: 72px;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* border: 3px #cccccc solid; */
 }
 .any {
-    margin-left: -5%;
     width: 40%;
     gap: 7%;
     min-width: 513px;
@@ -26,6 +26,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     /* border: 3px #cccccc solid; */
+    padding: 0 5%;
 }
 .logo {
     margin-top: 8px;
@@ -57,7 +58,7 @@ body {
 .searchbox {
     display: flex;
     min-width: 200px;
-    width: 20%;
+    width: 30%;
     flex-direction: row;
     /* border: 3px #cccccc solid; */
 }
@@ -115,9 +116,10 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 5%;
+    width: 40%;
     min-width: 87px;
-    /* border: 3px #cccccc solid; */
+    flex-direction: row-reverse;
+    margin-right: 5%;
 }
 .e {
     background: none;

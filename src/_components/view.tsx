@@ -21,16 +21,15 @@ const markdown = `# 논란
  `;
 
 const View = () => {
-    const [valuess, titless] = MyComponent({ markdown });
+    const [titless, valuess] = MyComponent({ markdown });
     console.log(valuess, titless);
     return (
         <DocumentMain category={["학생"]} title={["국재윤"]}>
+            {/* <ApiComponent /> */}
             <OpentabEmpty title={"내용"}>
                 {titless.map((value, index) => (
                     <OpentabEmpty title={value}>
-                        <ReactMarkdown>
-                            {valuess[index] + "\n\n" + valuess[index + 1]}
-                        </ReactMarkdown>
+                        <ReactMarkdown>{valuess[index]}</ReactMarkdown>
                     </OpentabEmpty>
                 ))}
             </OpentabEmpty>

@@ -14,15 +14,15 @@ interface OpentabEmptyProps {
 }
 
 function OpentabEmpty({ title, children }: OpentabEmptyProps) {
-    let titlesize: number = 0;
+    let titlesize: string = "";
     let iconsize: string = "";
     const { sizeValue } = useSize();
     const [isOpen, setIsOpen] = useState(false);
     if (sizeValue) {
-        titlesize = 40;
-        iconsize = "2x";
+        titlesize = "35px";
+        iconsize = "xl";
     } else {
-        titlesize = 20;
+        titlesize = "20px";
         iconsize = "x";
     }
     const handleTopboxClick = () => {
@@ -39,7 +39,10 @@ function OpentabEmpty({ title, children }: OpentabEmptyProps) {
                 >
                     <FontAwesomeIcon
                         icon={faChevronRight}
-                        style={{ color: "#757575" }}
+                        style={{
+                            color: "#757575",
+                            marginTop: "10px",
+                        }}
                         size={iconsize as SizeProp}
                     />
                 </div>
