@@ -16,14 +16,20 @@ interface OpentabEmptyProps {
 function OpentabEmpty({ title, children }: OpentabEmptyProps) {
     let titlesize: string = "";
     let iconsize: string = "";
+    let titlemargint: string = "";
+    let titlemarginb: string = "";
     const { sizeValue } = useSize();
     const [isOpen, setIsOpen] = useState(false);
     if (sizeValue) {
+        titlemargint = "10px";
         titlesize = "35px";
         iconsize = "xl";
+        titlemarginb = "0";
     } else {
+        titlemargint = "0";
         titlesize = "20px";
         iconsize = "x";
+        titlemarginb = "3px";
     }
     const handleTopboxClick = () => {
         setIsOpen(!isOpen);
@@ -41,7 +47,8 @@ function OpentabEmpty({ title, children }: OpentabEmptyProps) {
                         icon={faChevronRight}
                         style={{
                             color: "#757575",
-                            marginTop: "10px",
+                            marginTop: titlemargint,
+                            marginBottom: titlemarginb,
                         }}
                         size={iconsize as SizeProp}
                     />
